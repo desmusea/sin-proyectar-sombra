@@ -36,7 +36,7 @@ p {
 
 .grid-item img {
   width: 100%;
-  max-width: 100%;
+  max-width: 150px;
 }
 
 .projects-grid {
@@ -53,8 +53,7 @@ p {
 }
 
 .projects-grid .project img {
-  width: 100%;
-  max-width: 100%;
+  width: 200px;
 }
 
 ul {
