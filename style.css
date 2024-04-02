@@ -1,4 +1,3 @@
-/* General styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -19,10 +18,9 @@ p {
   margin-top: 5px;
 }
 
-/* Styles for the grid container */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 10px;
   margin: 20px;
 }
@@ -37,13 +35,13 @@ p {
 }
 
 .grid-item img {
-  width: 120px;
+  width: 100%;
+  max-width: 100%;
 }
 
-/* Styles for the grid */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 10px;
   margin: 20px;
 }
@@ -54,7 +52,8 @@ p {
   padding: 10px;
 }
 
-.rojects-grid .project img {
+.projects-grid .project img {
+  width: 100%;
   max-width: 100%;
 }
 
@@ -65,4 +64,15 @@ ul {
 
 ul li {
   margin-bottom: 5px;
+}
+
+a {
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container,
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
 }
