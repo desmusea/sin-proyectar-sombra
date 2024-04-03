@@ -70,7 +70,7 @@ button {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px;
+  gap: 24px;
   margin: 20px;
 }
 
@@ -103,15 +103,15 @@ button {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  gap: 24px;
   margin: 20px;
 }
 
 .projects-grid .project {
   border: 1px solid white;
   border-radius: 5px;
-  padding: 10px;
+  padding: 24px;
 }
 
 .projects-grid .project img {
