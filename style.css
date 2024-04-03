@@ -104,7 +104,7 @@ button {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-template-columns: repeat(autofit, minmax(300px, 1fr));
   gap: 24px;
   margin: 20px;
 }
