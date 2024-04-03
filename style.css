@@ -22,37 +22,48 @@ p {
   margin-top: 5px;
 }
 
-
-.slider {
+.carousel {
+  position: relative;
   width: 100%;
   overflow: hidden;
-  position: relative;
+}
+
+.carousel-container {
+  display: flex;
 }
 
 .slide {
-  display: none;
+  min-width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Alinea horizontalmente */
+  align-items: center; /* Alinea verticalmente */
+ text-align: center;
 }
 
 .slide img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
-.slide:first-child {
-  display: block;
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 2;
 }
 
-/* Animación */
-@keyframes slide {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.prev {
+  left: 0;
 }
 
-.slider .slide {
-  animation: slide 1.5s ease-in-out infinite;
+.next {
+  right: 0;
 }
 
 
