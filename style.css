@@ -32,13 +32,14 @@ p {
   display: flex;
 }
 
+
 .slide {
   min-width: 100%;
   flex: 1;
   display: flex;
   justify-content: center; /* Alinea horizontalmente */
   align-items: center; /* Alinea verticalmente */
- text-align: center;
+   text-align: center;
 }
 
 .slide img {
