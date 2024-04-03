@@ -22,6 +22,9 @@ p {
   margin-top: 5px;
 }
 
+img {
+  filter: grayscale(100);
+}
 .carousel {
   position: relative;
   width: 100%;
@@ -104,10 +107,11 @@ button {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   margin: 20px;
 }
+
 
 .projects-grid .project {
   border: 1px solid white;
@@ -117,6 +121,11 @@ button {
 
 .projects-grid .project img {
   width: 200px;
+}
+
+.images-wrapper {
+    display: flex;
+    gap: 12px;
 }
 
 ul {
@@ -130,4 +139,10 @@ ul li {
 
 a {
   color: white;
+}
+
+@media (max-width: 767px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* En móvil, ajusta automáticamente */
+  }
 }
