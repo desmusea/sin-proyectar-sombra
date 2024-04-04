@@ -22,7 +22,7 @@ h1 {
 h2 {
   margin: 20px;
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .subtitle {
@@ -42,6 +42,7 @@ h3 {
 p {
   margin-top: 5px;
 }
+
 .title {
   font-size: 24px;
 }
@@ -52,12 +53,6 @@ p {
   max-width: 50%;
 }
 
-img {
-  filter: grayscale(0);
-}
-img:hover {
-  filter: grayscale(0);
-}
 .carousel {
   position: relative;
   width: 100%;
@@ -72,8 +67,8 @@ img:hover {
   min-width: 100%;
   flex: 1;
   display: flex;
-  justify-content: center; /* Alinea horizontalmente */
-  align-items: center; /* Alinea verticalmente */
+  justify-content: center;
+  align-items: center; 
   text-align: center;
 }
 
@@ -152,6 +147,11 @@ button {
 .projects-grid .project img {
   width: 200px;
   object-fit: contain;
+  filter: grayscale(100);
+}
+
+.projects-grid .project img:hover {
+  filter: grayscale(0);
 }
 
 .images-wrapper {
@@ -177,9 +177,11 @@ a {
   .projects-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
+  
   .images-wrapper {
     flex-direction: column;
   }
+  
   .description {
     max-width: 100%;
   }
