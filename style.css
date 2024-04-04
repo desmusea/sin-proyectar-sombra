@@ -24,6 +24,10 @@ h2 {
   text-transform: uppercase;
   font-size: 18px;
 }
+.subtitle {
+  margin: 0;
+  fontt-size: 32px;
+}
 
 h3 {
   margin: 0;
@@ -34,6 +38,14 @@ h3 {
 
 p {
   margin-top: 5px;
+}
+.title {
+  font-size: 24px;
+}
+.description {
+  font-size: 18px;
+  text-align: justify;
+  max-width: 50%;
 }
 
 img {
@@ -156,12 +168,12 @@ a {
 
 @media (max-width: 767px) {
   .projects-grid {
-    grid-template-columns: repeat(
-      auto-fit,
-      minmax(300px, 1fr)
-    ); /* En móvil, ajusta automáticamente */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
   .images-wrapper {
     flex-direction: column;
+  }
+  .description {
+    max-width: 100%;
   }
 }
