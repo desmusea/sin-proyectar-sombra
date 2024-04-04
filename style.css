@@ -22,11 +22,14 @@ h1 {
 h2 {
   margin: 20px;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 24px;
 }
+
 .subtitle {
   margin: 0;
-  fontt-size: 32px;
+  font-size: 2em;
+  text-transform: none;
+  margin-left: 20px;
 }
 
 h3 {
@@ -42,6 +45,7 @@ p {
 .title {
   font-size: 24px;
 }
+
 .description {
   font-size: 18px;
   text-align: justify;
@@ -49,7 +53,10 @@ p {
 }
 
 img {
-  filter: grayscale(100);
+  filter: grayscale(0);
+}
+img:hover {
+  filter: grayscale(0);
 }
 .carousel {
   position: relative;
