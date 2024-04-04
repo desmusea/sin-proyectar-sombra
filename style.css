@@ -1,9 +1,14 @@
+@font-face {
+  font-family: monument;
+  src: url(https://cdn.glitch.global/7a2597b3-e24f-4526-98de-f024c079b581/MonumentGroteskPlusVariable.woff2?v=1712221500451);
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: monument, sans-serif;
   margin: 0;
   padding: 0;
-  background: black;
-  color: white;
+  background: rgba(232, 232, 232, 0.84);
+  color: black;
 }
 
 header {
@@ -55,7 +60,7 @@ button {
   top: 50%;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  color: black;
   border: none;
   cursor: pointer;
   padding: 10px;
@@ -79,7 +84,7 @@ button {
 }
 
 .grid-item {
-  border: 1px solid white;
+  border: 1px solid black;
   border-radius: 5px;
   padding: 10px;
   display: flex;
@@ -114,7 +119,7 @@ button {
 
 
 .projects-grid .project {
-  border: 1px solid white;
+  border: 1px solid black;
   border-radius: 5px;
   padding: 24px;
 }
@@ -138,11 +143,14 @@ ul li {
 }
 
 a {
-  color: white;
+  color: black;
 }
 
 @media (max-width: 767px) {
   .projects-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* En móvil, ajusta automáticamente */
+  }
+  .images-wrapper {
+    flex-direction: column;
   }
 }
