@@ -21,6 +21,15 @@ h1 {
 
 h2 {
   margin: 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+h3 {
+  margin: 0;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  font-size: 16px;
 }
 
 p {
@@ -40,14 +49,13 @@ img {
   display: flex;
 }
 
-
 .slide {
   min-width: 100%;
   flex: 1;
   display: flex;
   justify-content: center; /* Alinea horizontalmente */
   align-items: center; /* Alinea verticalmente */
-   text-align: center;
+  text-align: center;
 }
 
 .slide img {
@@ -75,7 +83,6 @@ button {
   right: 0;
 }
 
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -84,7 +91,7 @@ button {
 }
 
 .grid-item {
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 5px;
   padding: 10px;
   display: flex;
@@ -117,11 +124,10 @@ button {
   margin: 20px;
 }
 
-
 .projects-grid .project {
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 5px;
-  padding: 24px;
+  padding: 16px;
 }
 
 .projects-grid .project img {
@@ -129,8 +135,8 @@ button {
 }
 
 .images-wrapper {
-    display: flex;
-    gap: 12px;
+  display: flex;
+  gap: 12px;
 }
 
 ul {
@@ -148,7 +154,10 @@ a {
 
 @media (max-width: 767px) {
   .projects-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* En móvil, ajusta automáticamente */
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(300px, 1fr)
+    ); /* En móvil, ajusta automáticamente */
   }
   .images-wrapper {
     flex-direction: column;
