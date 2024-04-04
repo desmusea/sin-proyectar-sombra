@@ -99,7 +99,7 @@ button {
   justify-content: center;
   flex-direction: column;
   position: relative;
-  height: 250px;
+  height: 300px;
 }
 
 .grid-item img {
@@ -132,11 +132,13 @@ button {
 
 .projects-grid .project img {
   width: 200px;
+  object-fit: contain;
 }
 
 .images-wrapper {
   display: flex;
   gap: 12px;
+  align-items: flex-end;
 }
 
 ul {
