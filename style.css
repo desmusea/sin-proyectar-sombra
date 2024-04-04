@@ -173,7 +173,7 @@ a {
   color: black;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .projects-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
