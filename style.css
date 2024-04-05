@@ -99,7 +99,7 @@ button {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(4,1fr);
   gap: 24px;
   margin: 20px;
 }
@@ -113,7 +113,7 @@ button {
   justify-content: center;
   flex-direction: column;
   position: relative;
-  height: 300px;
+  max-height: 300px;
 }
 
 .grid-item img {
