@@ -176,7 +176,13 @@ a {
 @media (max-width: 1024px) {
   .grid-container {
     gap: 8px;
+    margin: 12px;
   }
+
+  .grid-item {
+    padding: 4px;
+  }
+
   .projects-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
