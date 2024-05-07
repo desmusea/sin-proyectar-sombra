@@ -7,7 +7,6 @@ class Slider {
     this.showSlide(this.slideIndex);
 
     const nextBtn = this.container.querySelector(".next");
-    console.log(this.container)
     const prevBtn = this.container.querySelector(".prev");
 
     if (nextBtn && prevBtn) {
@@ -17,7 +16,6 @@ class Slider {
   }
 
   showSlide(n) {
-    console.log(n)
     if (n >= this.slides.length) {
       this.slideIndex = 0;
     } else if (n < 0) {

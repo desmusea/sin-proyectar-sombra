@@ -174,40 +174,10 @@ a {
   color: black;
 }
 
-@media (max-width: 1024px) {
-  body {
-    padding: 12px;
-  }
-
-  .grid-container {
-    gap: 8px;
-    margin: 12px 0;
-  }
-
-  .projects-grid {
-    gap: 8px;
-  }
-
-  .grid-item {
-    padding: 4px;
-  }
-
-  .projects-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-
-  .images-wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .description {
-    max-width: 100%;
-  }
-}
 
 .tabs {
   overflow: hidden;
+  display: flex;
 }
 
 .tablinks {
@@ -271,4 +241,40 @@ button.tablinks.tab4.active {
 
 .tabcontent h3 {
   color: #333;
+}
+
+@media (max-width: 1024px) {
+  .tablinks {
+    width: 25%;
+  }
+
+  body {
+    padding: 12px;
+  }
+
+  .grid-container {
+    gap: 8px;
+    margin: 12px 0;
+  }
+
+  .projects-grid {
+    gap: 8px;
+  }
+
+  .grid-item {
+    padding: 4px;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .images-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .description {
+    max-width: 100%;
+  }
 }
