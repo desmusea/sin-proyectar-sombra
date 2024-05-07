@@ -6,13 +6,12 @@
 body {
   font-family: monument, sans-serif;
   margin: 0;
-  padding: 20px;
-  background: rgba(232, 232, 232, 0.84);
+  background: rgb(218 217 217 / 84%);
   color: black;
 }
 
 h1 {
-  margin: 0;
+  padding: 0 20px;
 }
 
 h2 {
@@ -23,7 +22,7 @@ h2 {
 
 .subtitle {
   margin: 0;
-  font-size: 2em;
+  font-size: 1.2em;
   text-transform: none;
 }
 
@@ -35,7 +34,7 @@ h3 {
 }
 
 p {
-  margin-top: 5px;
+  margin-top: 0;
 }
 
 .title {
@@ -46,6 +45,7 @@ p {
   font-size: 18px;
   text-align: justify;
   max-width: 50%;
+  padding: 0 20px;
 }
 
 .carousel {
@@ -54,7 +54,7 @@ p {
   overflow: hidden;
 }
 
-.carousel-container {
+.slider {
   display: flex;
 }
 
@@ -67,16 +67,22 @@ p {
   text-align: center;
 }
 
+#slider2 img,
+#slider3 img {
+  width: 300px;
+}
+
 .slide img {
   max-width: 100%;
   max-height: 100%;
 }
 
-button {
+button.prev,
+button.next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0);
   color: black;
   border: none;
   cursor: pointer;
@@ -198,4 +204,71 @@ a {
   .description {
     max-width: 100%;
   }
+}
+
+.tabs {
+  overflow: hidden;
+}
+
+.tablinks {
+  float: left;
+  border: 0;
+  border-radius: 5px 5px 0 0;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  margin-right: 5px;
+  background: rgb(173 171 171);
+}
+
+button.tablinks.tab1.active {
+  background: rgb(211 211 211);
+}
+
+button.tablinks.tab2 {
+  background: rgb(208 183 205);
+}
+
+button.tablinks.tab2.active {
+  background: rgb(229 201 227);
+}
+
+#tab2.tabcontent {
+  background: rgb(229 201 227);
+}
+
+button.tablinks.tab3 {
+  background: rgb(191 208 220);
+  pointer-events: none;
+}
+
+button.tablinks.tab3.active {
+  background: rgb(201 217 229);
+}
+
+#tab3.tabcontent {
+  background: rgb(201 217 229);
+}
+
+button.tablinks.tab4 {
+  background: rgb(187 216 187);
+  pointer-events: none;
+}
+
+button.tablinks.tab4.active {
+  background: rgb(204 229 201);
+}
+
+#tab4.tabcontent {
+  background: rgb(204 229 201);
+}
+
+.tabcontent {
+  display: none;
+  padding: 20px;
+  background: rgb(211 211 211);
+}
+
+.tabcontent h3 {
+  color: #333;
 }
