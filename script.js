@@ -67,5 +67,5 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += " active";
 }
 
-document.getElementById("tab1").style.display = "block";
+document.getElementById("tab0").style.display = "block";
 document.getElementsByClassName("tablinks")[0].className += " active";

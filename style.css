@@ -58,6 +58,7 @@ h3 {
 h3 {
   margin: 0;
   margin-bottom: 12px;
+  padding: 0;
 }
 
 h4 {
@@ -197,6 +198,10 @@ button.next {
   filter: grayscale(100);
 }
 
+.projects-grid .project img.big-image {
+  width: 100%;
+}
+
 .projects-grid .project img:hover {
   filter: grayscale(0);
 }
@@ -238,8 +243,20 @@ a {
   background: rgb(173 171 171);
 }
 
-button.tablinks.tab1.active {
+button.tablinks.tab0 {
+  background: rgb(173 171 171);
+}
+
+button.tablinks.tab0.active {
   background: rgb(211 211 211);
+}
+
+button.tablinks.tab1 {
+  background: rgb(224 222 170);
+}
+
+button.tablinks.tab1.active {
+  background: rgb(253 251 191);
 }
 
 button.tablinks.tab2 {
@@ -248,6 +265,10 @@ button.tablinks.tab2 {
 
 button.tablinks.tab2.active {
   background: rgb(229 201 227);
+}
+
+#tab1.tabcontent {
+  background: rgb(253 251 191);
 }
 
 #tab2.tabcontent {
