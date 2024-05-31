@@ -1,51 +1,88 @@
 @font-face {
-  font-family: monument;
-  src: url(https://cdn.glitch.global/7a2597b3-e24f-4526-98de-f024c079b581/MonumentGroteskPlusVariable.woff2?v=1712221500451);
+  font-family: Diatype;
+  src: url("./fonts/Cargo-DiatypePlusVariable.woff2");
+}
+
+@font-face {
+  font-family: DiatypeItalic;
+  src: url("./fonts/Cargo-DiatypePlusVariable-Italic.woff2");
 }
 
 body {
-  font-family: monument, sans-serif;
+  display: inline-block;
+  font-family: Diatype;
+  font-style: normal;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.85);
   margin: 0;
+  padding: 24px;
   background: rgb(218 217 217 / 84%);
-  color: black;
+  font-size: 1.3rem;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1;
+  font-variation-settings: "slnt" 0, "MONO" 0;
+}
+
+b {
+  font-weight: 400;
 }
 
 h1 {
-  padding: 0 20px;
-}
-
-h2 {
-  margin: 20px 0;
+  font-family: "Diatype";
   text-transform: uppercase;
-  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 0;
+  padding-bottom: 12px;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 1.5rem;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  font-variation-settings: "slnt" 0, "MONO" 0;
 }
 
-.subtitle {
+h2,
+h3 {
+  font-family: "Diatype";
+  font-weight: 400;
+  font-size: 1.3rem;
+  padding: 0;
+  padding-bottom: 12px;
   margin: 0;
-  font-size: 1.2em;
-  text-transform: none;
+  color: rgba(0, 0, 0, 0.85);
+  line-height: 1.1;
 }
 
 h3 {
   margin: 0;
   margin-bottom: 12px;
-  text-transform: uppercase;
-  font-size: 16px;
+}
+
+h4 {
+  font-family: "Diatype";
+  margin: 0;
+  margin-bottom: 12px;
+  font-weight: 400;
+}
+
+.subtitle {
+  margin: 0;
+  padding-bottom: 0;
+  text-transform: none;
 }
 
 p {
   margin-top: 0;
 }
 
-.title {
-  font-size: 24px;
-}
-
 .description {
-  font-size: 18px;
   text-align: justify;
-  max-width: 50%;
-  padding: 0 20px;
+  max-width: 70%;
+  padding: 0;
+  font-weight: 300;
+  font-family: "Diatype";
 }
 
 .carousel {
@@ -115,8 +152,8 @@ button.next {
 }
 
 .grid-item {
-  border: 2px solid black;
-  border-radius: 5px;
+  border: 1px solid black;
+  border-radius: 3px;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -129,7 +166,7 @@ button.next {
 .grid-item img {
   width: 100%;
   max-width: 180px;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 }
 
 .grid-item p {
@@ -149,13 +186,13 @@ button.next {
 }
 
 .projects-grid .project {
-  border: 2px solid black;
-  border-radius: 5px;
+  border: 1px solid black;
+  border-radius: 3px;
   padding: 16px;
 }
 
 .projects-grid .project img {
-  width: 200px;
+  width: 300px;
   object-fit: contain;
   filter: grayscale(100);
 }
@@ -177,7 +214,7 @@ ul {
 }
 
 ul li {
-  margin-bottom: 5px;
+  margin-bottom: 12px;
 }
 
 a {
@@ -195,7 +232,8 @@ a {
   border-radius: 5px 5px 0 0;
   outline: none;
   cursor: pointer;
-  padding: 10px 15px;
+  text-align: start;
+  padding: 10px 20px;
   margin-right: 5px;
   background: rgb(173 171 171);
 }
@@ -245,6 +283,7 @@ button.tablinks.tab4.active {
   display: none;
   padding: 20px;
   background: rgb(211 211 211);
+  border-radius: 0 5px 5px 5px;
 }
 
 .tabcontent h3 {
@@ -254,10 +293,6 @@ button.tablinks.tab4.active {
 @media (max-width: 1024px) {
   .tablinks {
     width: 25%;
-  }
-
-  body {
-    padding: 12px;
   }
 
   .grid-container {
