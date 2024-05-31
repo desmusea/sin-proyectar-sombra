@@ -67,8 +67,17 @@ p {
   text-align: center;
 }
 
+img {
+  border: 1px solid black;
+}
+
+.noborder {
+  border: 0;
+}
+
 #slider2 img,
-#slider3 img {
+#slider3 img,
+#slider6 img {
   width: 300px;
 }
 
@@ -159,6 +168,7 @@ button.next {
   display: flex;
   gap: 12px;
   align-items: flex-end;
+  flex-wrap: wrap;
 }
 
 ul {
@@ -173,7 +183,6 @@ ul li {
 a {
   color: black;
 }
-
 
 .tabs {
   overflow: hidden;
@@ -209,7 +218,6 @@ button.tablinks.tab2.active {
 
 button.tablinks.tab3 {
   background: rgb(191 208 220);
-  pointer-events: none;
 }
 
 button.tablinks.tab3.active {

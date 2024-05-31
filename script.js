@@ -46,6 +46,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const slider3 = new Slider("slider3");
   const slider4 = new Slider("slider4");
   const slider5 = new Slider("slider5");
+  const slider6 = new Slider("slider6");
+  const slider7 = new Slider("slider7");
 });
 
 
